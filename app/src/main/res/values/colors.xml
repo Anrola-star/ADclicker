@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 浅色模式默认加载 -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorOnPrimary">@color/light_onPrimary</color>
+    <color name="colorBackground">@color/light_background</color>
+    <color name="colorOnBackground">@color/light_onBackground</color>
+
+
+    <!-- 浅色模式主色 -->
+    <color name="light_primary">#21EFDA</color>
+    <color name="light_onPrimary">#FFFFFF</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_onBackground">#121212</color>
+
+    <!-- 深色模式主色 -->
+    <color name="dark_primary">#BB86FC</color>
+    <color name="dark_onPrimary">#000000</color>
+    <color name="dark_background">#121212</color>
+    <color name="dark_onBackground">#FFFFFF</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipOrientation="horizontal|vertical"
+    android:drawable="@drawable/anrola_avatar"
+    android:gravity="center">
+    <!-- 裁剪形状：圆形 -->
+    <shape android:shape="oval">
+        <solid android:color="@android:color/transparent" />
+    </shape>
+</clip>

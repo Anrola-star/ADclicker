@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.ADclicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 主色配置 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <!-- 背景色配置 -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <!-- 可选：强制开启深色模式的跟随逻辑（默认跟随系统） -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">true</item>
+
+    </style>
+
+    <style name="Theme.ADclicker" parent="Base.Theme.ADclicker" />
+</resources>

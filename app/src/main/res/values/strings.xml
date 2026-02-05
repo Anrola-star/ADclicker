@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ADclicker</string>
+    <string name="open_accessibility_service_btn">开启服务</string>
+    <string name="accessibility_service_description">自动点击跳过广告，需开启无障碍服务😉😉😉</string>
+</resources>
