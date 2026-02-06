@@ -1,86 +1,26 @@
 
 
 # ADclicker
-
 一个基于 Android 无障碍服务的广告自动跳过应用。
 
-## 简介
 
-ADclicker 是一款帮助用户自动跳过广告的应用。通过 Android 无障碍服务（Accessibility Service），应用可以自动检测并点击跳过按钮，为用户提供更流畅的使用体验。
+基于 Android 无障碍服务的广告自动跳过工具，智能识别并自动点击广告跳过按钮，解放双手，提升应用使用流畅度。
 
-## 功能特性
+🚀 智能识别：精准检测各类应用内的广告界面，无需手动干预。  
+⚡ 自动操作：识别到跳过按钮后自动点。  
+🛡️ 安全合规：仅使用 Android 官方无障碍服务，不获取敏感数据。  
 
-- **自动检测广告**：智能识别应用中的广告界面
-- **一键跳过**：自动点击跳过按钮，无需手动操作
-- **无障碍服务支持**：利用 Android 无障碍服务实现自动化操作
-- **简洁界面**：简单易用的用户界面
-
-## 技术架构
-
-- **平台**：Android
-- **开发语言**：Java/Kotlin
-- **构建工具**：Gradle
-- **核心服务**：Android AccessibilityService
-- **UI 框架**：XML 布局 + Material Design
-
-## 环境要求
-
-- Android Studio Arctic Fox 或更高版本
-- Gradle 7.x 或更高版本
-- Android SDK 21 (Android 5.0) 或更高版本
-- JDK 11 或更高版本
-
-## 安装说明
-
-1. 克隆或下载本项目到本地
-2. 使用 Android Studio 打开项目
-3. 连接 Android 设备或启动模拟器
-4. 点击 Run 按钮或执行 `./gradlew installDebug` 命令进行安装
 
 ## 使用说明
+1.点击"启动服务"按钮自动跳转到无障碍设置界面。  
+2.查看"已下载应用"找到ADclicker。  
+3.开启ADclicker的无障碍服务。  
 
-1. 安装完成后，打开应用
-2. 按照界面提示启用无障碍服务
-3. 开启应用或浏览包含广告的内容时，应用将自动检测并点击跳过按钮
+## 注意
 
-## 权限说明
+ :bangbang: **ADclicker 核心功能依赖 Android 系统无障碍服务权限实现，该权限为 Android 系统高级权限，授予后应用可实现屏幕元素识别、模拟点击 / 滑动等操作，请务必重视该权限的使用风险。** :bangbang:
 
-本应用需要以下权限：
-- **无障碍服务权限**：用于检测屏幕上的广告元素并自动执行点击操作
-- **存储权限**（如需要）：用于保存相关配置
-
-## 项目结构
-
-```
-adclicker/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/anrola/adclicker/
-│   │   │   ├── activity/
-│   │   │   │   └── MainActivity.java       # 主界面
-│   │   │   └── service/
-│   │   │       └── MyAccessibilityService.java  # 无障碍服务
-│   │   ├── res/                            # 资源文件
-│   │   └── AndroidManifest.xml             # 应用清单
-│   └── build.gradle.kts                    # 应用模块配置
-├── build.gradle.kts                        # 项目配置
-└── settings.gradle.kts                      # 设置文件
-```
-
-## 参与贡献
-
-1. Fork 本仓库
-2. 新建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
-
-## 许可证
-
-本项目采用 Apache License 2.0 许可证。
-
-## 注意事项
-
-- 请确保在不使用时及时关闭无障碍服务权限
-- 本应用不会收集任何用户数据
-- 部分设备可能需要手动允许自启动权限以确保服务正常运行
+1.✅本应用全程本地运行，全程无网络请求，不收集、不存储、不上传任何用户数据。  
+2.✅仅访问当前屏幕的控件信息，不读取用户输入、文件等敏感内容.  
+3.✅仅识别并点击含「跳过」「跳过广告」「倒计时跳过」等关键词的按钮，无其他无关屏幕操作。  
+4.✅部分应用的广告界面设计特殊，可能存在识别成功率差异。  
