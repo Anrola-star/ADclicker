@@ -10,16 +10,21 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_open_accessibility"
+        style="@style/Base.Theme.ADclicker"
         android:layout_width="120dp"
         android:layout_height="50dp"
+        android:fontFamily="monospace"
         android:text="@string/open_accessibility_service_btn"
+        android:textAllCaps="false"
         android:textSize="14sp"
+        android:typeface="normal"
+        app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ll_avatar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <LinearLayout
         android:id="@+id/ll_avatar"
@@ -71,12 +76,27 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_refresh"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/circle_shape"
             android:foregroundTint="@color/colorOnPrimary"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_refresh" />
     </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="add"
+        android:elevation="50dp"
+        android:translationZ="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_setting" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

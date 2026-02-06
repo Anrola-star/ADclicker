@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+/app/release/ADclicker_v0.0.1_release.apk
+/app/release/baselineProfiles/0/ADclicker_v0.0.1_release.dm
+/app/release/baselineProfiles/1/ADclicker_v0.0.1_release.dm
+/app/release/output-metadata.json

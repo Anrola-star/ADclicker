@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        create("release") {
+            storeFile = file("D:\\IDE\\AndroidStudio\\KeyStore\\myKeyStore.jks")
+            storePassword = "197319731973"
+            keyAlias = "androidrelease"
+            keyPassword = "197319731973"
+        }
+    }
     namespace = "com.anrola.adclicker"
     compileSdk = 35
 
@@ -11,7 +19,7 @@ android {
         minSdk = 31
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "0.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -23,6 +31,19 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
+            isDebuggable = false
+
+            applicationVariants.all {
+                outputs.forEach { output ->
+                    val appName = "ADclicker"
+                    val versionName = this.versionName
+                    val buildType = this.buildType.name
+                    val newFileName = "${appName}_v${versionName}_${buildType}.apk"
+                    (output as com.android.build.gradle.internal.api.ApkVariantOutputImpl).outputFileName =
+                        newFileName
+                }
+            }
         }
     }
     compileOptions {

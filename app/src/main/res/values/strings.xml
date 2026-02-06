@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">ADclicker</string>
     <string name="open_accessibility_service_btn">开启服务</string>
+    <string name="setting">⚙️设置</string>
+    <string name="application_setting">应用设置</string>
+    <string name="function_switch">功能开关</string>
+    <string name="permission_setting">权限管理</string>
     <string name="accessibility_service_description">自动点击跳过广告，需开启无障碍服务😉😉😉</string>
 </resources>
