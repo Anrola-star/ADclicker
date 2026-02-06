@@ -7,8 +7,8 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import java.util.List;
 
-public class MyAccessibilityService extends AccessibilityService {
-    private static final String TAG = "MyAccessibilityService";
+public class ADClickerAccessibilityService extends AccessibilityService {
+    private static final String TAG = "ADClickerAccessibilityService";
 
 
     @Override
@@ -23,7 +23,12 @@ public class MyAccessibilityService extends AccessibilityService {
 
         if (skipBtnNodes != null && !skipBtnNodes.isEmpty()) {
             for (AccessibilityNodeInfo skipBtnNode : skipBtnNodes) {
-                Log.d(TAG, String.format("检测到广告节点： %s", skipBtnNode));
+                Log.d(TAG, String.format("[检测到疑似广告节点]： %s", skipBtnNode));
+                if (!skipBtnNode.isClickable()) {
+                    Log.d(TAG, "[节点不可点击]");
+                    continue;
+                }
+
                 Log.d(TAG, String.format("点击跳过按钮： %s", skipBtnNode));
                 skipBtnNode.performAction(AccessibilityNodeInfo.ACTION_CLICK);
             }

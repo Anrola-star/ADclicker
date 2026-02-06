@@ -27,7 +27,7 @@
         </activity>
 
         <service
-            android:name=".service.MyAccessibilityService"
+            android:name=".service.ADClickerAccessibilityService"
             android:exported="true"
             android:label="ADclicker_ANROLA"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">

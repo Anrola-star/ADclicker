@@ -13,12 +13,12 @@
     <!-- 浅色模式主色 -->
     <color name="light_primary">#21EFDA</color>
     <color name="light_onPrimary">#FFFFFF</color>
-    <color name="light_background">#FFFFFF</color>
+    <color name="light_background">#FBF6F6</color>
     <color name="light_onBackground">#121212</color>
 
     <!-- 深色模式主色 -->
     <color name="dark_primary">#BB86FC</color>
     <color name="dark_onPrimary">#000000</color>
-    <color name="dark_background">#121212</color>
+    <color name="dark_background">#572D43</color>
     <color name="dark_onBackground">#FFFFFF</color>
 </resources>
